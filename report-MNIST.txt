@@ -1,0 +1,10 @@
+torch.utils.data.DataLoader()
+
+torch.cat
+
+At the heart of PyTorch data loading utility is the torch.utils.data.DataLoader class. 
+Default应该是 有label的, 以MNIST为例, 60000个  (tensor(1,28,28),tensor(1))
+因此在作prediction时是有 torch.cat(input, dim=0)
+倘若不使用 torch.cat, model(inputs)是： (tensor(...),)
+
+numpy.reshape()
